@@ -1,0 +1,83 @@
+[
+  {
+    "question": "Most clouds weigh over millions of pounds.",
+    "answer": true
+  },
+  {
+    "question": "Peaches and Nectarines are genetically the same fruit.",
+    "answer": true
+  },
+  {
+    "question": "Most of the floating specks seen in sunlight are actually human skin.",
+    "answer": true
+  },
+  {
+    "question": "A penny dropped from the top of the Empire State Building can kill a person.",
+    "answer": false
+  },
+  {
+    "question": "Adding salt to a Pineapple actually makes it sweeter.",
+    "answer": true
+  },
+  {
+    "question": "A dead person’s nails will continue to grow after death.",
+    "answer": false
+  },
+  {
+    "question": "The last time a guillotine was used for execution was by the French in 1977.",
+    "answer": true
+  },
+  {
+    "question": "Pineapples were once so expensive that people bought them as decorations.",
+    "answer": true
+  },
+  {
+    "question": "Marie Antoinette actually said “Let them eat cake.”",
+    "answer": false
+  },
+  {
+    "question": "On average, a person swallows around 5 spiders in their sleep every year.",
+    "answer": false
+  },
+  {
+    "question": "Walt Disney is being cryogenically frozen.",
+    "answer": false
+  },
+  {
+    "question": "A 9ft tall man made of shadows is standing directly behind you.",
+    "answer": false
+  },
+  {
+    "question": "Sunglasses were invented for Chinese Judges to hide their facial expressions.",
+    "answer": true
+  },
+  {
+    "question": "The rights to The Terminator were bought for only one dollar.",
+    "answer": true
+  },
+  {
+    "question": "Vincent Van Gogh chopped his ear off in a fit of madness for a woman.",
+    "answer": false
+  },
+  {
+    "question": "You can see the Great Wall of China from space.",
+    "answer": false
+  },
+  {
+    "question": "A human could swim through a Blue Whale’s veins.",
+    "answer": true
+  },
+  {
+    "question": "The creator of comic sans hasn’t used it since its creation.",
+    "answer": true
+  },
+  {
+    "question": "Cracking your knuckles has a chance to lead to arthritis.",
+    "answer": false
+  },
+  {
+    "question": "The final question is after this one.",
+    "answer": false
+  }
+
+]
