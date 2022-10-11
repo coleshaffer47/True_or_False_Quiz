@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">True or False Quiz</string>
+    <string name="main_true">TRUE</string>
+    <string name="main_false">FALSE</string>
+    <string name="main_score">score</string>
+    <string name="main_exit">EXIT</string>
+    <string name="main_continue">CONTINUE</string>
+    <string name="main_textview">TextView</string>
+    <string name="main_correctFalseMsg">Good Job! That fact isn\'t true.</string>
+    <string name="main_wrongFalseMsg">Nope. That fact is true!</string>
+    <string name="main_wrongTrueMsg">Nope. That fact isn\'t true!</string>
+    <string name="main_correctTrueMsg">Good Job! That fact is true.</string>
+    <string name="main_restartText">RESTART</string>
 </resources>

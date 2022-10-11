@@ -1,0 +1,83 @@
+[
+  {
+    "question": "La plupart des nuages \u200B\u200Bpèsent plus de millions de livres.",
+    "answer": true
+  },
+  {
+    "question": "Les pêches et les nectarines sont génétiquement le même fruit.",
+    "answer": true
+  },
+  {
+    "question": "La plupart des taches flottantes observées au soleil sont en fait de la peau humaine.",
+    "answer": true
+  },
+  {
+    "question": "Un centime tombé du haut de l'Empire State Building peut tuer une personne.",
+    "answer": false
+  },
+  {
+    "question": "Ajouter du sel à un ananas le rend plus sucré.",
+    "answer": true
+  },
+  {
+    "question": "Les ongles d'une personne décédée continueront à pousser après la mort.",
+    "answer": false
+  },
+  {
+    "question": "La dernière fois qu'une guillotine a été utilisée pour l'exécution, c'était par les Français en 1977.",
+    "answer": true
+  },
+  {
+    "question": "Les ananas étaient autrefois si chers que les gens les achetaient comme décorations.",
+    "answer": true
+  },
+  {
+    "question": "Marie-Antoinette a en fait dit \"Laissez-les manger du gâteau\".",
+    "answer": false
+  },
+  {
+    "question": "En moyenne, une personne avale environ 5 araignées dans son sommeil chaque année.",
+    "answer": false
+  },
+  {
+    "question": "Walt Disney est gelé cryogéniquement.",
+    "answer": false
+  },
+  {
+    "question": "Un homme de 9 pieds de haut fait d'ombres se tient juste derrière vous.",
+    "answer": false
+  },
+  {
+    "question": "Les lunettes de soleil ont été inventées pour que les juges chinois cachent leurs expressions faciales.",
+    "answer": true
+  },
+  {
+    "question": "Les droits de The Terminator ont été achetés pour seulement un dollar.",
+    "answer": true
+  },
+  {
+    "question": "Vincent Van Gogh s'est coupé l'oreille dans un accès de folie pour une femme.",
+    "answer": false
+  },
+  {
+    "question": "Vous pouvez voir la Grande Muraille de Chine depuis l'espace.",
+    "answer": false
+  },
+  {
+    "question": "Un humain pourrait nager dans les veines d'une baleine bleue.",
+    "answer": true
+  },
+  {
+    "question": "Le créateur de comic sans ne l'a pas utilisé depuis sa création.",
+    "answer": true
+  },
+  {
+    "question": "Faire craquer vos jointures peut entraîner de l'arthrite.",
+    "answer": false
+  },
+  {
+    "question": "La dernière question est après celle-ci.",
+    "answer": false
+  }
+
+]

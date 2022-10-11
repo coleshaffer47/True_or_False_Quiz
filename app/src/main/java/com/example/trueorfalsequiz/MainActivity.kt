@@ -41,7 +41,7 @@ class MainActivity : AppCompatActivity() {
         trueButton.setOnClickListener {
             var correct = quiz.checkAnswer(true)
             if(correct) {
-                questionText.text = "Good Job! That fact is true."
+                questionText.text = getString(R.string.main_correctTrueMsg)
                 //Button Visibility
                 resumeButton.visibility = View.VISIBLE
                 trueButton.visibility = View.GONE
@@ -50,7 +50,7 @@ class MainActivity : AppCompatActivity() {
 
             }
             else {
-                questionText.text = "Nope. That fact isn't true!"
+                questionText.text = getString(R.string.main_wrongTrueMsg)
                 //Button Visibility
                 resumeButton.visibility = View.VISIBLE
                 trueButton.visibility = View.GONE
@@ -65,7 +65,7 @@ class MainActivity : AppCompatActivity() {
         falseButton.setOnClickListener {
             var correct = quiz.checkAnswer(false)
             if(correct) {
-                questionText.text = "Good Job! That fact isn't true."
+                questionText.text = getString(R.string.main_correctFalseMsg)
                 //Button Visibility
                 resumeButton.visibility = View.VISIBLE
                 trueButton.visibility = View.GONE
@@ -74,7 +74,7 @@ class MainActivity : AppCompatActivity() {
 
             }
             else {
-                questionText.text = "Nope. That fact is true!"
+                questionText.text = getString(R.string.main_wrongFalseMsg)
                 //Button Visibility
                 resumeButton.visibility = View.VISIBLE
                 trueButton.visibility = View.GONE
@@ -105,7 +105,7 @@ class MainActivity : AppCompatActivity() {
 
             //Button Visibility
             if(quiz.endingScreen()) {
-                resumeButton.text = "RESTART"
+                resumeButton.text = getString(R.string.main_restartText)
                 buttonThreeValue = 2
                 trueButton.visibility = View.GONE
                 falseButton.visibility = View.GONE

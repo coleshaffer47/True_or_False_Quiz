@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Questionnaire Vrai ou Faux</string>
+    <string name="main_true">VRAI</string>
+    <string name="main_false">FAUX</string>
+    <string name="main_correctFalseMsg">Bon travail! Ce fait n\'est pas vrai.</string>
+    <string name="main_wrongFalseMsg">Non. Ce fait est vrai !</string>
+    <string name="main_continue">CONTINUEZ</string>
+    <string name="main_exit">SORTIR</string>
+    <string name="main_wrongTrueMsg">Non. Ce fait n\'est pas vrai !</string>
+    <string name="main_correctTrueMsg">Bon travail! Ce fait est vrai.</string>
+    <string name="main_restartText">REDÉMARRER</string>
+</resources>
