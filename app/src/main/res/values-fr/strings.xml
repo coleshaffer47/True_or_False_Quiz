@@ -10,4 +10,14 @@
     <string name="main_wrongTrueMsg">Non. Ce fait n\'est pas vrai !</string>
     <string name="main_correctTrueMsg">Bon travail! Ce fait est vrai.</string>
     <string name="main_restartText">REDÉMARRER</string>
+    <string name="main_score_display">SCORE: %1$d/%2$d points!</string>
+    <string name="main_end_message">Voulez-vous essayer à nouveau?</string>
+    <string name="main_badScore">NOTE FINALE : %1$d/20 points! Aie. C\'était difficile.</string>
+    <string name="main_decentScore">NOTE FINALE : %1$d/20 points! Tu peux faire mieux que ça!</string>
+    <string name="main_goodScore">NOTE FINALE : %1$d/20 points! Bien fait!</string>
+    <string name="main_perfectScore">NOTE FINALE : %1$d/20 points! Vous les avez tous corrects!</string>
+    <string name="main_score">score</string>
+    <string name="main_textview">TextView</string>
+    <string name="toast_correct">ç\'est correct!</string>
+    <string name="toast_incorrect">c\'est faux...</string>
 </resources>

@@ -11,4 +11,12 @@
     <string name="main_wrongTrueMsg">Nope. That fact isn\'t true!</string>
     <string name="main_correctTrueMsg">Good Job! That fact is true.</string>
     <string name="main_restartText">RESTART</string>
+    <string name="main_score_display">SCORE: %1$d/%2$d points!</string>
+    <string name="main_end_message">Want to try again?</string>
+    <string name="main_badScore">FINAL SCORE: %1$d/20 points! Ouch. That was rough.</string>
+    <string name="main_decentScore">FINAL SCORE: %1$d/20 points! You can do better than that!</string>
+    <string name="main_goodScore">FINAL SCORE: %1$d/20 points! Well done!</string>
+    <string name="main_perfectScore">FINAL SCORE: %1$d/20 points! You got them all right!</string>
+    <string name="toast_correct">correct!</string>
+    <string name="toast_incorrect">incorrect...</string>
 </resources>

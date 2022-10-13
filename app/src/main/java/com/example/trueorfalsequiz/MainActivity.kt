@@ -23,6 +23,7 @@ class MainActivity : AppCompatActivity() {
     }
     private lateinit var quiz: Quiz
     var buttonThreeValue = 1
+    var finalScoreRange = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -34,8 +35,24 @@ class MainActivity : AppCompatActivity() {
 
 
         //get the first question, set up the textviews
-        questionText.text = quiz.getCurrentQuestion()
-        scoreText.text = quiz.setScore()
+        if (quiz.advanceToNextQuestions())
+            questionText.text = quiz.getCurrentQuestion()
+        else {
+            finalScoreRange = quiz.getFinalScoreRange()
+            if (finalScoreRange == 0)
+                questionText.text = getString(R.string.main_badScore, quiz.score)
+            if (finalScoreRange == 1)
+                questionText.text = getString(R.string.main_decentScore, quiz.score)
+            if (finalScoreRange == 2)
+                questionText.text = getString(R.string.main_goodScore, quiz.score)
+            if (finalScoreRange == 3)
+                questionText.text = getString(R.string.main_perfectScore, quiz.score)
+        }
+
+        if (quiz.scoreDisplay())
+            scoreText.text = getString(R.string.main_score_display, quiz.score, 20)
+        else
+            scoreText.text = getString(R.string.main_end_message)
 
         //set up the onClickListeners for the buttons
         trueButton.setOnClickListener {
@@ -46,7 +63,7 @@ class MainActivity : AppCompatActivity() {
                 resumeButton.visibility = View.VISIBLE
                 trueButton.visibility = View.GONE
                 falseButton.visibility = View.GONE
-                Toast.makeText(this, "\uD83D\uDFE2 Correct!", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, getString(R.string.toast_correct), Toast.LENGTH_SHORT).show()
 
             }
             else {
@@ -55,11 +72,14 @@ class MainActivity : AppCompatActivity() {
                 resumeButton.visibility = View.VISIBLE
                 trueButton.visibility = View.GONE
                 falseButton.visibility = View.GONE
-                Toast.makeText(this, "\uD83D\uDD34 Incorrect...", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, getString(R.string.toast_incorrect), Toast.LENGTH_SHORT).show()
 
             }
 
-            scoreText.text = quiz.setScore()
+            if (quiz.scoreDisplay())
+                scoreText.text = getString(R.string.main_score_display, quiz.score, 20)
+            else
+                scoreText.text = getString(R.string.main_end_message)
         }
 
         falseButton.setOnClickListener {
@@ -70,7 +90,7 @@ class MainActivity : AppCompatActivity() {
                 resumeButton.visibility = View.VISIBLE
                 trueButton.visibility = View.GONE
                 falseButton.visibility = View.GONE
-                Toast.makeText(this, "\uD83D\uDFE2 Correct!", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, getString(R.string.toast_correct), Toast.LENGTH_SHORT).show()
 
             }
             else {
@@ -79,17 +99,38 @@ class MainActivity : AppCompatActivity() {
                 resumeButton.visibility = View.VISIBLE
                 trueButton.visibility = View.GONE
                 falseButton.visibility = View.GONE
-                Toast.makeText(this, "\uD83D\uDD34 Incorrect...", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, getString(R.string.toast_incorrect), Toast.LENGTH_SHORT).show()
 
             }
 
-            scoreText.text = quiz.setScore()
+            if (quiz.scoreDisplay())
+                scoreText.text = getString(R.string.main_score_display, quiz.score, 20)
+            else
+                scoreText.text = getString(R.string.main_end_message)
+
+
         }
 
         resumeButton.setOnClickListener {
             if (buttonThreeValue == 1) {
-                questionText.text = quiz.getCurrentQuestion()
-                scoreText.text = quiz.setScore()
+                if (quiz.advanceToNextQuestions())
+                    questionText.text = quiz.getCurrentQuestion()
+                else {
+                    finalScoreRange = quiz.getFinalScoreRange()
+                    if (finalScoreRange == 0)
+                        questionText.text = getString(R.string.main_badScore, quiz.score)
+                    if (finalScoreRange == 1)
+                        questionText.text = getString(R.string.main_decentScore, quiz.score)
+                    if (finalScoreRange == 2)
+                        questionText.text = getString(R.string.main_goodScore, quiz.score)
+                    if (finalScoreRange == 3)
+                        questionText.text = getString(R.string.main_perfectScore, quiz.score)
+                }
+
+                if (quiz.scoreDisplay())
+                    scoreText.text = getString(R.string.main_score_display, quiz.score, 20)
+                else
+                    scoreText.text = getString(R.string.main_end_message)
                 Log.d(TAG, "onCreate: ${quiz.current_Question}")
             }
             else if (buttonThreeValue == 2) {
@@ -99,8 +140,24 @@ class MainActivity : AppCompatActivity() {
                 falseButton.visibility = View.VISIBLE
                 resumeButton.visibility = View.GONE
                 crasher.visibility = View.GONE
-                questionText.text = quiz.getCurrentQuestion()
-                scoreText.text = quiz.setScore()
+
+                if (quiz.advanceToNextQuestions())
+                    questionText.text = quiz.getCurrentQuestion()
+                else {
+                    finalScoreRange = quiz.getFinalScoreRange()
+                    if (finalScoreRange == 0)
+                        questionText.text = getString(R.string.main_badScore, quiz.score)
+                    if (finalScoreRange == 1)
+                        questionText.text = getString(R.string.main_decentScore, quiz.score)
+                    if (finalScoreRange == 2)
+                        questionText.text = getString(R.string.main_goodScore, quiz.score)
+                    if (finalScoreRange == 3)
+                        questionText.text = getString(R.string.main_perfectScore, quiz.score)
+                }
+                if (quiz.scoreDisplay())
+                    scoreText.text = getString(R.string.main_score_display, quiz.score, 20)
+                else
+                    scoreText.text = getString(R.string.main_end_message)
             }
 
             //Button Visibility
